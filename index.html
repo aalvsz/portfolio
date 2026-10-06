@@ -112,9 +112,9 @@ section.s{border-top:1px solid var(--line);padding-block:clamp(60px,8vw,96px)}
 .big-stat{display:flex;align-items:baseline;gap:14px;margin-top:26px;flex-wrap:wrap}
 .big-stat b{font-family:var(--f-display);font-weight:700;font-variation-settings:"wdth" 80;font-size:clamp(3rem,7vw,4.8rem);line-height:.9;color:var(--accent);font-variant-numeric:tabular-nums}
 .big-stat span{max-width:30ch;color:var(--muted);font-size:14.5px}
-.steps{display:grid;gap:10px;margin-top:26px;counter-reset:st}
-.steps li{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:baseline;font-size:15px}
-.steps li::before{counter-increment:st;content:counter(st);font-family:var(--f-mono);font-size:12px;color:var(--accent);border:1px solid var(--line);border-radius:50%;width:24px;height:24px;display:grid;place-items:center}
+.steps{display:grid;gap:10px;margin:26px 0 0;padding:0;list-style:none}
+.steps li{position:relative;padding-left:20px;font-size:15px}
+.steps li::before{content:"";position:absolute;left:0;top:.75em;width:10px;height:2px;background:var(--accent)}
 .links-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .diagram{border:1px solid var(--line);background:var(--surface);border-radius:8px;overflow-x:auto}
 .diagram svg{display:block;min-width:520px;width:100%;height:auto}
@@ -226,6 +226,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
       <li><a class="l" href="#highlights">Highlights</a></li>
       <li><a class="l" href="#work">Work</a></li>
       <li><a class="l" href="#experience">Experience</a></li>
+      <li class="keep"><a class="l" href="https://github.com/aalvsz" target="_blank" rel="noopener">GitHub ↗</a></li>
       <li class="keep"><a class="l" href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -241,6 +242,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         <div class="cta">
           <a class="btn pri" href="#contact">Get in touch</a>
           <a class="btn" href="https://www.linkedin.com/in/alvarezander/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/aalvsz" target="_blank" rel="noopener">GitHub ↗</a>
           <a class="btn" href="https://arxiv.org/abs/2606.18037" target="_blank" rel="noopener">Latest paper ↗</a>
         </div>
         <div class="next mono"><span class="pill">Upcoming</span><span>Oct 13, 2026 · Panel speaker at NVIDIA Build-a-Claw, Barcelona</span></div>
@@ -535,6 +537,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
       <ul class="clist">
         <li><span class="label">Email</span><span class="v"><span class="sel">ander.alvarez@multiversecomputing.com</span> <a href="mailto:ander.alvarez@multiversecomputing.com" aria-label="Write an email">↗</a></span></li>
         <li><span class="label">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/alvarezander/" target="_blank" rel="noopener">linkedin.com/in/alvarezander</a></span></li>
+        <li><span class="label">GitHub</span><span class="v"><a href="https://github.com/aalvsz" target="_blank" rel="noopener">github.com/aalvsz</a></span></li>
         <li><span class="label">Papers</span><span class="v"><a href="https://arxiv.org/abs/2606.18037" target="_blank" rel="noopener">arXiv:2606.18037</a><small>ProvenanceGuard</small></span></li>
         <li><span class="label"></span><span class="v"><a href="https://arxiv.org/abs/2512.16531" target="_blank" rel="noopener">arXiv:2512.16531</a><small>Scaling Laws for Energy Efficiency of Local LLMs</small></span></li>
         <li><span class="label">Open source</span><span class="v"><a href="https://github.com/NVIDIA/nvflow/pull/9" target="_blank" rel="noopener">NVIDIA/nvflow #9</a><small>ProvenanceGuard grounding verification</small></span></li>
