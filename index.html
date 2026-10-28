@@ -211,6 +211,7 @@ section.s{border-top:1px solid var(--line);padding-block:clamp(60px,8vw,96px)}
 .tl ul.pts li::before{content:"";position:absolute;left:0;top:.65em;width:6px;height:2px;background:var(--accent)}
 .side{display:flex;flex-direction:column;gap:28px}
 .side h3{font-size:14px;font-weight:600;margin-bottom:10px}
+.sk dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-top:10px}.sk dd{margin:2px 0 0;font-size:14px}
 .skills{display:flex;flex-wrap:wrap;gap:6px}
 .skills li{font-family:var(--f-mono);font-size:12px;padding:4px 9px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
 .langs li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px}
@@ -266,9 +267,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
           <a class="btn pri" href="#contact">Get in touch</a>
           <a class="btn" href="https://www.linkedin.com/in/alvarezander/" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a class="btn" href="https://github.com/aalvsz" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://aalvsz.github.io/portfolio/cv.html" target="_blank" rel="noopener">CV ↗</a>
           <a class="btn" href="https://arxiv.org/abs/2606.18037" target="_blank" rel="noopener">Latest paper ↗</a>
         </div>
-        <div class="next mono"><span class="pill">Upcoming</span><span>Oct 13, 2026 · Panel speaker at NVIDIA Build-a-Claw, Barcelona</span></div>
+        <div class="next mono"><span class="pill">Next</span><span>Oct 2026 · NVIDIA GTC Berlin with Multiverse Computing (booth 3070)</span></div>
       </div>
       <figure class="viz">
         <canvas id="tt" aria-label="Animated illustration: a dense 10 by 10 weight matrix is factored into a chain of four small tensor cores, then reassembled."></canvas>
@@ -318,9 +320,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         <div class="hcol">
           <span class="label">Talks &amp; presentations</span>
           <article class="card">
-            <div class="when">Oct 13, 2026 · Barcelona <span class="soon">Upcoming</span></div>
+            <div class="when">Oct 2026 · Berlin <span class="soon">Upcoming</span></div>
+            <h3>NVIDIA GTC Berlin</h3>
+            <p>With the Multiverse Computing team (Silver Sponsor, booth 3070): AI agents and efficient models at the edge.</p>
+          </article>
+          <article class="card">
+            <div class="when">Oct 13, 2026 · Barcelona</div>
             <h3>NVIDIA Build-a-Claw</h3>
-            <p>Panel “Agents at Work, How Spain Is Building with AI”. AI agents, agent harnesses, how they are changing work in industry, and ProvenanceGuard.</p>
+            <p>Panelist on “Agents at Work, How Spain Is Building with AI”. AI agents, agent harnesses, how they are changing work in industry, and ProvenanceGuard.</p>
           </article>
           <article class="card">
             <div class="when">2026 · UC Berkeley</div>
@@ -554,8 +561,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         <div class="side">
           <div>
             <h3>Skills</h3>
-            <ul class="skills">
-              <li>Model compression</li><li>Knowledge distillation</li><li>SFT · LoRA</li><li>RL post-training</li><li>Hardware-aware inference</li><li>ONNX Runtime</li><li>Core ML</li><li>CUDA</li><li>Axelera Metis</li><li>LangGraph</li><li>Google ADK</li><li>MCP</li><li>Computer vision</li><li>LLMs</li>
+            <dl class="sk">
+              <dt>Model compression</dt><dd>Pruning · Quantization · Knowledge distillation · SFT · LoRA · RL post-training</dd>
+              <dt>Inference &amp; hardware</dt><dd>Hardware-aware inference · ONNX Runtime · Core ML · CUDA · Axelera Metis</dd>
+              <dt>Agents</dt><dd>LangGraph · Google ADK · MCP · Verification layers</dd>
+              <dt>Models</dt><dd>Computer vision (YOLO) · LLMs (Qwen, Gemma)</dd>
+            </dl>
+          </div>
+          <div>
+            <h3>Certifications</h3>
+            <ul class="langs">
+              <li><span>IELTS</span><span>Overall band 8.5</span></li>
+              <li><span>Mathematics for Machine Learning: Linear Algebra</span><span>Imperial College London</span></li>
+              <li><span>Neural Networks and Deep Learning</span><span>DeepLearning.AI</span></li>
             </ul>
           </div>
           <div>
